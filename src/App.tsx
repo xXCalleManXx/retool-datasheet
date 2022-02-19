@@ -1,6 +1,6 @@
-import React from 'react';
 import './App.css';
 import TableSheet, {Column, TableSheetRows} from "./lib/TableSheet";
+import React from "react";
 
 class App extends React.Component<any, any> {
 
@@ -19,7 +19,9 @@ class App extends React.Component<any, any> {
     ] as TableSheetRows
 
     return (
-      <TableSheet columns={columns} rows={rows} cellChanged={data => console.log(data)}></TableSheet>
+      <div>
+        <TableSheet columns={columns} rows={rows} cellChanged={data => console.log(data)}></TableSheet>
+      </div>
     )
   }
 }

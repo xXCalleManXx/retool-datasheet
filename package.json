@@ -10,7 +10,7 @@
   "files": ["dist", "README.md"],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/xXCalleManXx/retool-datasheet.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
