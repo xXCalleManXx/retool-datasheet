@@ -1,13 +1,16 @@
 {
   "name": "retool-sheet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "author": {
     "name": "xXCalleManXx"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xXCalleManXx/retool-datasheet.git"
@@ -33,7 +36,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --extensions .ts,.tsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,6 +61,7 @@
   "devDependencies": {
     "@babel/cli": "^7.17.3",
     "@babel/core": "^7.17.5",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
     "@types/lodash": "^4.14.178",
